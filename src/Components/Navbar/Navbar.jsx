@@ -5,7 +5,7 @@ import Dropdown from 'react-bootstrap/Dropdown';
 import {Form, FormControl, Button } from 'react-bootstrap';
 import React , { useState, useEffect, use } from "react";
 import './Navbar.css';
-const App = () =>{
+const Navbar1 = () =>{
   const [visibleClass, setVisibleClass] = useState('visually-hidden');
   const [visibleClass2, setVisibleClass2] = useState('');
 
@@ -25,11 +25,11 @@ const App = () =>{
     };
   }, []);
   return(
-      <Navbar xpand="lg"  className='sticky-top'>
+      <Navbar id='navbar1' xpand="lg"  className='sticky-top'>
         <Container>
           
         <Dropdown className={visibleClass}>
-          <Dropdown.Toggle variant="warning" id="dropdown-basic">
+          <Dropdown.Toggle variant="" id="dropdown-basic">
             <Navbar.Brand href="#">Martin Dantes</Navbar.Brand>
           </Dropdown.Toggle>
 
@@ -54,4 +54,5 @@ const App = () =>{
   )
 }
 
-export default App
+export default Navbar1;
+
